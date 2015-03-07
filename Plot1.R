@@ -27,7 +27,7 @@ DateTime <- strptime(dtv, format = "%d/%m/%Y %H:%M:%S")
 wkdf <- cbind(DateTime,wkdf)
 
 ## Set up PNG device and define the output file to write the plot to
-png("plot1.png")
+png("plot1.png", bg = "transparent")
 
 ## Construct the histogram plot
 ## convert Global_active_power variable to numeric type (needs to convert via character type to maintain actual values)
